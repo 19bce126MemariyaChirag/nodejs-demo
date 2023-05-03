@@ -22,7 +22,7 @@ pipeline {
         }
         stage('push image') {
             steps{
-                sh 'docker push memariyachirag126 /nodeapp:$BUILD_NUMBER'
+                sh 'docker push memariyachirag126/nodeapp:$BUILD_NUMBER'
             }
         }
 }
